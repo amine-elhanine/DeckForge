@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --canvas: 246 247 249;
+    --surface: 255 255 255;
+    --raised: 241 243 246;
+    --line: 224 228 234;
+    --ink: 17 20 26;
+    --muted: 98 106 120;
+    --brand: 47 107 255;
+    --brand-ink: 255 255 255;
+    --font-sans: "Inter", system-ui;
+  }
+
+  .dark {
+    --canvas: 12 14 18;
+    --surface: 19 22 28;
+    --raised: 27 31 39;
+    --line: 39 45 56;
+    --ink: 233 237 245;
+    --muted: 143 154 172;
+    --brand: 88 142 255;
+    --brand-ink: 8 11 16;
+  }
+
+  html,
+  body {
+    height: 100%;
+  }
+
+  body {
+    @apply bg-canvas text-ink antialiased;
+    font-family: var(--font-sans), system-ui, sans-serif;
+  }
+
+  * {
+    @apply border-line;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply rounded-full bg-line;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-brand/60 ring-offset-1 ring-offset-canvas;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg border border-line
+      bg-surface px-3 py-1.5 text-sm font-medium text-ink transition
+      hover:bg-raised active:scale-[.98] disabled:cursor-not-allowed disabled:opacity-50;
+  }
+
+  .btn-primary {
+    @apply border-transparent bg-brand text-brand-ink hover:brightness-110;
+  }
+
+  .btn-ghost {
+    @apply border-transparent bg-transparent hover:bg-raised;
+  }
+
+  .panel {
+    @apply rounded-xl border border-line bg-surface;
+  }
+
+  .chip {
+    @apply inline-flex items-center gap-1 rounded-full border border-line bg-raised
+      px-2 py-0.5 text-[11px] font-medium text-muted;
+  }
+
+  .field {
+    @apply w-full rounded-lg border border-line bg-surface px-3 py-2 text-sm text-ink
+      placeholder:text-muted focus:border-brand focus:outline-none;
+  }
+
+  /* Assistant markdown */
+  .prose-chat {
+    @apply text-[15px] leading-relaxed;
+  }
+  .prose-chat p {
+    @apply mb-3 last:mb-0;
+  }
+  .prose-chat ul,
+  .prose-chat ol {
+    @apply mb-3 ml-5 list-outside space-y-1;
+  }
+  .prose-chat ul {
+    @apply list-disc;
+  }
+  .prose-chat ol {
+    @apply list-decimal;
+  }
+  .prose-chat code {
+    @apply rounded bg-raised px-1 py-0.5 font-mono text-[13px];
+  }
+  .prose-chat pre {
+    @apply mb-3 overflow-x-auto rounded-lg border border-line bg-raised p-3;
+  }
+  .prose-chat pre code {
+    @apply bg-transparent p-0;
+  }
+  .prose-chat a {
+    @apply text-brand underline underline-offset-2;
+  }
+  .prose-chat table {
+    @apply mb-3 w-full border-collapse text-sm;
+  }
+  .prose-chat th,
+  .prose-chat td {
+    @apply border border-line px-2 py-1 text-left;
+  }
+  .prose-chat h1,
+  .prose-chat h2,
+  .prose-chat h3 {
+    @apply mb-2 mt-4 font-semibold first:mt-0;
+  }
+}
+
+/* The slide preview arrives as pre-rendered HTML from the backend and is styled
+   by the deck's own theme stylesheet. Everything there is namespaced `df-`, so
+   it cannot collide with the application chrome. */
+.deck-scope {
+  container-type: inline-size;
+}

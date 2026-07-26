@@ -1,0 +1,31 @@
+{
+  "name": "acme",
+  "extends": "minimal",
+  "label": "Acme Brand",
+  "description": "Reference brand theme contributed by the example plugin.",
+  "tags": ["brand", "plugin", "light"],
+  "mode": "light",
+  "palette": {
+    "primary": "#c8102e",
+    "secondary": "#1f3b57",
+    "accent": "#f2a900",
+    "text": "#14181f",
+    "surface": "#f5f6f8"
+  },
+  "fonts": {
+    "heading": "Inter Tight",
+    "body": "Inter"
+  },
+  "shape": {
+    "radius": 2,
+    "card_radius": 2,
+    "image_radius": 2,
+    "shadow": "none"
+  },
+  "decor": {
+    "default": { "kind": "bar", "color": "primary", "opacity": 1.0, "size": 8 }
+  },
+  "layout_preferences": {
+    "content": ["brand_sidebar", "bullets", "split", "cards"]
+  }
+}

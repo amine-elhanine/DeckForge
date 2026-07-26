@@ -1,0 +1,127 @@
+{
+  "name": "business",
+  "label": "Business",
+  "description": "Slate and warm brass — confident without being loud.",
+  "tags": [
+    "business",
+    "professional",
+    "report",
+    "light"
+  ],
+  "mode": "light",
+  "version": "1.0.0",
+  "author": "DeckForge",
+  "palette": {
+    "background": "#fbfbfc",
+    "surface": "#f1f2f5",
+    "surface_alt": "#e5e7ec",
+    "text": "#1a1d24",
+    "text_muted": "#616776",
+    "primary": "#334155",
+    "secondary": "#64748b",
+    "accent": "#b08d57",
+    "border": "#dcdfe6"
+  },
+  "shape": {
+    "radius": 6,
+    "card_radius": 8,
+    "shadow": "0 4px 16px rgba(26,29,36,0.07)"
+  },
+  "icon_style": "outline",
+  "background": {
+    "kind": "solid",
+    "color": "#fbfbfc"
+  },
+  "decor": {
+    "default": {
+      "kind": "corner",
+      "color": "accent",
+      "opacity": 0.5,
+      "size": 160
+    }
+  },
+  "layout_preferences": {
+    "cover": [
+      "hero",
+      "hero_centered",
+      "image_background"
+    ],
+    "agenda": [
+      "agenda",
+      "two_column",
+      "cards"
+    ],
+    "section": [
+      "section_divider",
+      "section_number",
+      "big_statement"
+    ],
+    "content": [
+      "bullets",
+      "split",
+      "image_right",
+      "two_column",
+      "cards"
+    ],
+    "comparison": [
+      "comparison",
+      "two_column",
+      "table"
+    ],
+    "timeline": [
+      "timeline",
+      "process"
+    ],
+    "roadmap": [
+      "roadmap",
+      "timeline"
+    ],
+    "process": [
+      "process",
+      "flow",
+      "cycle"
+    ],
+    "metrics": [
+      "metrics",
+      "dashboard"
+    ],
+    "chart": [
+      "chart_focus",
+      "dashboard",
+      "split"
+    ],
+    "diagram": [
+      "diagram",
+      "architecture",
+      "flow"
+    ],
+    "table": [
+      "table"
+    ],
+    "image": [
+      "image_full",
+      "image_left",
+      "image_right"
+    ],
+    "quote": [
+      "quote",
+      "big_statement"
+    ],
+    "quiz": [
+      "quiz",
+      "cards"
+    ],
+    "references": [
+      "references",
+      "two_column"
+    ],
+    "appendix": [
+      "bullets",
+      "table"
+    ],
+    "ending": [
+      "ending",
+      "hero_centered"
+    ]
+  }
+}

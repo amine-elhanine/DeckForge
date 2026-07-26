@@ -1,0 +1,135 @@
+{
+  "name": "medical",
+  "label": "Medical",
+  "description": "Clinical white, trustworthy blue-green, high legibility.",
+  "tags": [
+    "healthcare",
+    "clinical",
+    "science",
+    "light",
+    "accessible"
+  ],
+  "mode": "light",
+  "version": "1.0.0",
+  "author": "DeckForge",
+  "palette": {
+    "background": "#ffffff",
+    "surface": "#eef6fa",
+    "surface_alt": "#dfeef5",
+    "text": "#0f1c26",
+    "text_muted": "#4c6472",
+    "primary": "#0b6e99",
+    "secondary": "#0e9f6e",
+    "accent": "#e11d48",
+    "border": "#cfe3ec",
+    "success": "#0e9f6e",
+    "danger": "#dc2626"
+  },
+  "shape": {
+    "radius": 8,
+    "card_radius": 12,
+    "image_radius": 10,
+    "shadow": "0 4px 14px rgba(11,110,153,0.1)"
+  },
+  "bullets": {
+    "marker": "check",
+    "marker_color": "secondary"
+  },
+  "icon_style": "outline",
+  "background": {
+    "kind": "solid",
+    "color": "#ffffff"
+  },
+  "decor": {
+    "default": {
+      "kind": "bar",
+      "color": "primary",
+      "opacity": 1.0,
+      "size": 5
+    }
+  },
+  "layout_preferences": {
+    "cover": [
+      "hero",
+      "hero_centered",
+      "image_background"
+    ],
+    "agenda": [
+      "agenda",
+      "two_column",
+      "cards"
+    ],
+    "section": [
+      "section_divider",
+      "section_number",
+      "big_statement"
+    ],
+    "content": [
+      "bullets",
+      "split",
+      "image_right",
+      "two_column",
+      "cards"
+    ],
+    "comparison": [
+      "comparison",
+      "two_column",
+      "table"
+    ],
+    "timeline": [
+      "timeline",
+      "process"
+    ],
+    "roadmap": [
+      "roadmap",
+      "timeline"
+    ],
+    "process": [
+      "process",
+      "flow",
+      "cycle"
+    ],
+    "metrics": [
+      "metrics",
+      "dashboard"
+    ],
+    "chart": [
+      "chart_focus",
+      "dashboard",
+      "split"
+    ],
+    "diagram": [
+      "diagram",
+      "architecture",
+      "flow"
+    ],
+    "table": [
+      "table"
+    ],
+    "image": [
+      "image_full",
+      "image_left",
+      "image_right"
+    ],
+    "quote": [
+      "quote",
+      "big_statement"
+    ],
+    "quiz": [
+      "quiz",
+      "cards"
+    ],
+    "references": [
+      "references",
+      "two_column"
+    ],
+    "appendix": [
+      "bullets",
+      "table"
+    ],
+    "ending": [
+      "ending",
+      "hero_centered"
+    ]
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "name": "startup",
+  "label": "Startup",
+  "description": "High-energy violet and coral for pitch decks that move.",
+  "tags": [
+    "pitch",
+    "bold",
+    "vc",
+    "product",
+    "light"
+  ],
+  "mode": "light",
+  "version": "1.0.0",
+  "author": "DeckForge",
+  "palette": {
+    "background": "#ffffff",
+    "surface": "#f6f4ff",
+    "surface_alt": "#ece7ff",
+    "text": "#16112b",
+    "text_muted": "#5f5880",
+    "primary": "#6d28d9",
+    "secondary": "#db2777",
+    "accent": "#f97316",
+    "border": "#e4dcff"
+  },
+  "type_scale": {
+    "display": {
+      "weight": 800,
+      "letter_spacing": -1.6
+    },
+    "title": {
+      "weight": 750,
+      "letter_spacing": -0.8
+    }
+  },
+  "shape": {
+    "radius": 16,
+    "card_radius": 22,
+    "image_radius": 20,
+    "shadow": "0 16px 44px rgba(109,40,217,0.16)"
+  },
+  "icon_style": "outline",
+  "background": {
+    "kind": "solid",
+    "color": "#ffffff"
+  },
+  "backgrounds": {
+    "cover": {
+      "kind": "gradient",
+      "colors": [
+        "#6d28d9",
+        "#db2777"
+      ],
+      "angle": 135
+    },
+    "section": {
+      "kind": "gradient",
+      "colors": [
+        "#6d28d9",
+        "#f97316"
+      ],
+      "angle": 120
+    },
+    "ending": {
+      "kind": "gradient",
+      "colors": [
+        "#db2777",
+        "#6d28d9"
+      ],
+      "angle": 200
+    }
+  },
+  "decor": {
+    "default": {
+      "kind": "orbs",
+      "color": "secondary",
+      "opacity": 0.1,
+      "size": 380
+    }
+  },
+  "layout_preferences": {
+    "cover": [
+      "hero_centered",
+      "image_background",
+      "hero"
+    ],
+    "agenda": [
+      "agenda",
+      "two_column",
+      "cards"
+    ],
+    "section": [
+      "section_number",
+      "big_statement",
+      "section_divider"
+    ],
+    "content": [
+      "split",
+      "cards",
+      "bullets",
+      "image_left",
+      "grid"
+    ],
+    "comparison": [
+      "comparison",
+      "two_column",
+      "table"
+    ],
+    "timeline": [
+      "timeline",
+      "process"
+    ],
+    "roadmap": [
+      "roadmap",
+      "timeline"
+    ],
+    "process": [
+      "process",
+      "flow",
+      "cycle"
+    ],
+    "metrics": [
+      "metrics",
+      "dashboard"
+    ],
+    "chart": [
+      "chart_focus",
+      "dashboard",
+      "split"
+    ],
+    "diagram": [
+      "diagram",
+      "architecture",
+      "flow"
+    ],
+    "table": [
+      "table"
+    ],
+    "image": [
+      "image_full",
+      "image_left",
+      "image_right"
+    ],
+    "quote": [
+      "quote",
+      "big_statement"
+    ],
+    "quiz": [
+      "quiz",
+      "cards"
+    ],
+    "references": [
+      "references",
+      "two_column"
+    ],
+    "appendix": [
+      "bullets",
+      "table"
+    ],
+    "ending": [
+      "ending",
+      "hero_centered"
+    ]
+  }
+}

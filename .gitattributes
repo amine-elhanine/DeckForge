@@ -1,0 +1,19 @@
+# Normalise to LF in the repository; check out native on Windows.
+* text=auto
+
+# Must stay LF wherever they are checked out, or the shell refuses to run them.
+*.sh text eol=lf
+
+# Windows-only, and PowerShell is happiest with CRLF.
+*.ps1 text eol=crlf
+*.iss text eol=crlf
+
+# Binary: never touch, never diff.
+*.png binary
+*.jpg binary
+*.ico binary
+*.pptx binary
+*.pdf binary
+*.ttf binary
+*.woff binary
+*.woff2 binary

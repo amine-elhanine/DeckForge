@@ -1,0 +1,150 @@
+{
+  "name": "academic",
+  "label": "Academic",
+  "description": "Serif headings on cream, footnote-friendly, citation aware.",
+  "tags": [
+    "research",
+    "serif",
+    "lecture",
+    "formal",
+    "light"
+  ],
+  "mode": "light",
+  "version": "1.0.0",
+  "author": "DeckForge",
+  "palette": {
+    "background": "#fbf9f4",
+    "surface": "#f3efe6",
+    "surface_alt": "#e9e3d6",
+    "text": "#1c1a17",
+    "text_muted": "#5d574c",
+    "primary": "#7b1e2b",
+    "secondary": "#33566b",
+    "accent": "#a67c00",
+    "border": "#ded7c7"
+  },
+  "fonts": {
+    "heading": "Source Serif 4",
+    "body": "Source Sans 3",
+    "office_heading": "Cambria",
+    "office_body": "Calibri",
+    "fallback": "Georgia, 'Times New Roman', serif"
+  },
+  "type_scale": {
+    "display": {
+      "size": 60,
+      "weight": 600
+    },
+    "title": {
+      "size": 40,
+      "weight": 600
+    },
+    "footnote": {
+      "size": 13
+    },
+    "quote": {
+      "font": "heading"
+    }
+  },
+  "shape": {
+    "radius": 2,
+    "card_radius": 3,
+    "image_radius": 2,
+    "shadow": "none"
+  },
+  "bullets": {
+    "marker": "dot",
+    "marker_size": 6
+  },
+  "icon_style": "outline",
+  "background": {
+    "kind": "solid",
+    "color": "#fbf9f4"
+  },
+  "decor": {
+    "default": {
+      "kind": "none"
+    }
+  },
+  "layout_preferences": {
+    "cover": [
+      "hero",
+      "image_background"
+    ],
+    "agenda": [
+      "agenda",
+      "two_column",
+      "cards"
+    ],
+    "section": [
+      "section_divider",
+      "section_number",
+      "big_statement"
+    ],
+    "content": [
+      "two_column",
+      "bullets",
+      "image_right",
+      "split"
+    ],
+    "comparison": [
+      "comparison",
+      "two_column",
+      "table"
+    ],
+    "timeline": [
+      "timeline",
+      "process"
+    ],
+    "roadmap": [
+      "roadmap",
+      "timeline"
+    ],
+    "process": [
+      "process",
+      "flow",
+      "cycle"
+    ],
+    "metrics": [
+      "metrics",
+      "dashboard"
+    ],
+    "chart": [
+      "chart_focus",
+      "dashboard",
+      "split"
+    ],
+    "diagram": [
+      "diagram",
+      "architecture",
+      "flow"
+    ],
+    "table": [
+      "table"
+    ],
+    "image": [
+      "image_full",
+      "image_left",
+      "image_right"
+    ],
+    "quote": [
+      "quote"
+    ],
+    "quiz": [
+      "quiz",
+      "cards"
+    ],
+    "references": [
+      "references",
+      "two_column"
+    ],
+    "appendix": [
+      "bullets",
+      "table"
+    ],
+    "ending": [
+      "ending",
+      "hero_centered"
+    ]
+  }
+}

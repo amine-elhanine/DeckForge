@@ -1,0 +1,153 @@
+{
+  "name": "github",
+  "label": "Terminal",
+  "description": "Dev-dark palette, monospace accents, made for code.",
+  "tags": [
+    "dark",
+    "developer",
+    "code",
+    "engineering",
+    "tech"
+  ],
+  "mode": "dark",
+  "version": "1.0.0",
+  "author": "DeckForge",
+  "palette": {
+    "background": "#0d1117",
+    "surface": "#161b22",
+    "surface_alt": "#21262d",
+    "text": "#e6edf3",
+    "text_muted": "#8b949e",
+    "primary": "#58a6ff",
+    "on_primary": "#0d1117",
+    "secondary": "#bc8cff",
+    "accent": "#3fb950",
+    "border": "#30363d",
+    "danger": "#f85149",
+    "warning": "#d29922"
+  },
+  "fonts": {
+    "heading": "Inter",
+    "body": "Inter",
+    "mono": "JetBrains Mono",
+    "office_heading": "Segoe UI",
+    "office_body": "Segoe UI"
+  },
+  "type_scale": {
+    "eyebrow": {
+      "font": "mono",
+      "letter_spacing": 1.0,
+      "transform": "none"
+    },
+    "code": {
+      "size": 17
+    },
+    "caption": {
+      "font": "mono",
+      "size": 13
+    }
+  },
+  "shape": {
+    "radius": 6,
+    "card_radius": 8,
+    "image_radius": 6,
+    "shadow": "none"
+  },
+  "bullets": {
+    "marker": "chevron",
+    "marker_color": "accent"
+  },
+  "icon_style": "outline",
+  "background": {
+    "kind": "solid",
+    "color": "#0d1117"
+  },
+  "decor": {
+    "default": {
+      "kind": "none"
+    }
+  },
+  "layout_preferences": {
+    "cover": [
+      "hero",
+      "hero_centered",
+      "image_background"
+    ],
+    "agenda": [
+      "agenda",
+      "two_column",
+      "cards"
+    ],
+    "section": [
+      "section_divider",
+      "section_number",
+      "big_statement"
+    ],
+    "content": [
+      "bullets",
+      "split",
+      "cards",
+      "two_column"
+    ],
+    "comparison": [
+      "comparison",
+      "two_column",
+      "table"
+    ],
+    "timeline": [
+      "timeline",
+      "process"
+    ],
+    "roadmap": [
+      "roadmap",
+      "timeline"
+    ],
+    "process": [
+      "process",
+      "flow",
+      "cycle"
+    ],
+    "metrics": [
+      "metrics",
+      "dashboard"
+    ],
+    "chart": [
+      "chart_focus",
+      "dashboard",
+      "split"
+    ],
+    "diagram": [
+      "diagram",
+      "architecture",
+      "flow"
+    ],
+    "table": [
+      "table"
+    ],
+    "image": [
+      "image_full",
+      "image_left",
+      "image_right"
+    ],
+    "quote": [
+      "quote",
+      "big_statement"
+    ],
+    "quiz": [
+      "quiz",
+      "cards"
+    ],
+    "references": [
+      "references",
+      "two_column"
+    ],
+    "appendix": [
+      "bullets",
+      "table"
+    ],
+    "ending": [
+      "ending",
+      "hero_centered"
+    ]
+  }
+}

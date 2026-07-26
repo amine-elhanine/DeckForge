@@ -1,0 +1,799 @@
+{
+  "id": "pres_885278ed94",
+  "title": "Reinforcement Learning",
+  "subtitle": "From bandits to RLHF",
+  "description": "A 20-minute primer for engineers shipping their first RL system.",
+  "theme": "modern_dark",
+  "theme_overrides": {},
+  "aspect_ratio": "16:9",
+  "background": null,
+  "sections": [
+    {
+      "id": "sec_6acb2b6741",
+      "title": "Foundations",
+      "summary": null,
+      "order": 0,
+      "metadata": {}
+    },
+    {
+      "id": "sec_5bfa962651",
+      "title": "In practice",
+      "summary": null,
+      "order": 1,
+      "metadata": {}
+    },
+    {
+      "id": "sec_c276944d3a",
+      "title": "Wrap up",
+      "summary": null,
+      "order": 2,
+      "metadata": {}
+    }
+  ],
+  "slides": [
+    {
+      "id": "sl_fcf5188472",
+      "kind": "cover",
+      "layout": "auto",
+      "section_id": "sec_6acb2b6741",
+      "eyebrow": "Engineering primer",
+      "title": "Reinforcement Learning",
+      "subtitle": "From bandits to RLHF — what actually matters when you ship one",
+      "elements": [],
+      "notes": "Set expectations: 20 minutes, no maths beyond expectations, one runnable idea.",
+      "background": null,
+      "theme_overrides": {},
+      "animations": [],
+      "references": [],
+      "metadata": {},
+      "locked": false,
+      "hidden": false
+    },
+    {
+      "id": "sl_9e6578b1af",
+      "kind": "agenda",
+      "layout": "auto",
+      "section_id": "sec_6acb2b6741",
+      "eyebrow": null,
+      "title": "What we'll cover",
+      "subtitle": null,
+      "elements": [
+        {
+          "id": "el_9663199ee3",
+          "slot": "body",
+          "frame": null,
+          "style": {},
+          "hidden": false,
+          "z": 0,
+          "type": "bullets",
+          "items": [
+            {
+              "text": "The loop: state, action, reward",
+              "level": 0,
+              "icon": null,
+              "emphasis": false
+            },
+            {
+              "text": "Why credit assignment is the hard part",
+              "level": 0,
+              "icon": null,
+              "emphasis": false
+            },
+            {
+              "text": "Where RL beats supervised learning — and where it doesn't",
+              "level": 0,
+              "icon": null,
+              "emphasis": false
+            },
+            {
+              "text": "RLHF in one slide",
+              "level": 0,
+              "icon": null,
+              "emphasis": false
+            },
+            {
+              "text": "A checklist before you start",
+              "level": 0,
+              "icon": null,
+              "emphasis": false
+            }
+          ],
+          "bullet_style": "dot"
+        }
+      ],
+      "notes": "Signpost the arc so people know when to save questions.",
+      "background": null,
+      "theme_overrides": {},
+      "animations": [],
+      "references": [],
+      "metadata": {},
+      "locked": false,
+      "hidden": false
+    },
+    {
+      "id": "sl_d1afd0b142",
+      "kind": "section",
+      "layout": "auto",
+      "section_id": "sec_6acb2b6741",
+      "eyebrow": "Part one",
+      "title": "The loop",
+      "subtitle": "Everything else is a variation on four boxes",
+      "elements": [],
+      "notes": "",
+      "background": null,
+      "theme_overrides": {},
+      "animations": [],
+      "references": [],
+      "metadata": {
+        "section_number": 1
+      },
+      "locked": false,
+      "hidden": false
+    },
+    {
+      "id": "sl_14cd2a6f85",
+      "kind": "content",
+      "layout": "auto",
+      "section_id": "sec_6acb2b6741",
+      "eyebrow": null,
+      "title": "The core loop",
+      "subtitle": "An agent learns by acting, not by being told",
+      "elements": [
+        {
+          "id": "el_43960aaa4c",
+          "slot": "body",
+          "frame": null,
+          "style": {},
+          "hidden": false,
+          "z": 0,
+          "type": "bullets",
+          "items": [
+            {
+              "text": "The **agent** observes a state",
+              "level": 0,
+              "icon": null,
+              "emphasis": false
+            },
+            {
+              "text": "It selects an **action** from a policy",
+              "level": 0,
+              "icon": null,
+              "emphasis": false
+            },
+            {
+              "text": "The environment returns a **reward** and the next state",
+              "level": 0,
+              "icon": null,
+              "emphasis": false
+            },
+            {
+              "text": "The policy updates so good actions become more likely",
+              "level": 0,
+              "icon": null,
+              "emphasis": false
+            }
+          ],
+          "bullet_style": "dot"
+        },
+        {
+          "id": "el_173a2c8cf2",
+          "slot": "body",
+          "frame": null,
+          "style": {},
+          "hidden": false,
+          "z": 0,
+          "type": "diagram",
+          "engine": "mermaid",
+          "source": "flowchart LR\n  A[Agent] -- action --> E[Environment]\n  E -- state, reward --> A",
+          "caption": "The agent-environment loop",
+          "rendered_asset_id": null
+        }
+      ],
+      "notes": "Stress that the reward is the only supervision. Everything downstream inherits its flaws.",
+      "background": null,
+      "theme_overrides": {},
+      "animations": [],
+      "references": [],
+      "metadata": {},
+      "locked": false,
+      "hidden": false
+    },
+    {
+      "id": "sl_4cbce88380",
+      "kind": "quote",
+      "layout": "auto",
+      "section_id": "sec_6acb2b6741",
+      "eyebrow": null,
+      "title": "",
+      "subtitle": null,
+      "elements": [
+        {
+          "id": "el_4349799e17",
+          "slot": "body",
+          "frame": null,
+          "style": {},
+          "hidden": false,
+          "z": 0,
+          "type": "quote",
+          "text": "The reward hypothesis: all of what we mean by goals can be described as the maximisation of expected cumulative reward.",
+          "attribution": "Sutton & Barto",
+          "role": "Reinforcement Learning: An Introduction"
+        }
+      ],
+      "notes": "Land the point, then immediately complicate it on the next slide.",
+      "background": null,
+      "theme_overrides": {},
+      "animations": [],
+      "references": [],
+      "metadata": {},
+      "locked": false,
+      "hidden": false
+    },
+    {
+      "id": "sl_cd00a441ee",
+      "kind": "comparison",
+      "layout": "auto",
+      "section_id": "sec_5bfa962651",
+      "eyebrow": null,
+      "title": "Supervised learning vs. RL",
+      "subtitle": null,
+      "elements": [
+        {
+          "id": "el_6853a1007e",
+          "slot": "body",
+          "frame": null,
+          "style": {},
+          "hidden": false,
+          "z": 0,
+          "type": "text",
+          "text": "**Supervised**",
+          "role": "lead",
+          "align": "start",
+          "markdown": true
+        },
+        {
+          "id": "el_7d5a9db172",
+          "slot": "body",
+          "frame": null,
+          "style": {},
+          "hidden": false,
+          "z": 0,
+          "type": "bullets",
+          "items": [
+            {
+              "text": "Labels are given",
+              "level": 0,
+              "icon": null,
+              "emphasis": false
+            },
+            {
+              "text": "IID samples",
+              "level": 0,
+              "icon": null,
+              "emphasis": false
+            },
+            {
+              "text": "Failure looks like error",
+              "level": 0,
+              "icon": null,
+              "emphasis": false
+            }
+          ],
+          "bullet_style": "dot"
+        },
+        {
+          "id": "el_cca58a8ecc",
+          "slot": "body",
+          "frame": null,
+          "style": {},
+          "hidden": false,
+          "z": 0,
+          "type": "text",
+          "text": "**Reinforcement**",
+          "role": "lead",
+          "align": "start",
+          "markdown": true
+        },
+        {
+          "id": "el_f652d7e66d",
+          "slot": "body",
+          "frame": null,
+          "style": {},
+          "hidden": false,
+          "z": 0,
+          "type": "bullets",
+          "items": [
+            {
+              "text": "Labels are earned",
+              "level": 0,
+              "icon": null,
+              "emphasis": false
+            },
+            {
+              "text": "Your policy shapes the data",
+              "level": 0,
+              "icon": null,
+              "emphasis": false
+            },
+            {
+              "text": "Failure looks like collapse",
+              "level": 0,
+              "icon": null,
+              "emphasis": false
+            }
+          ],
+          "bullet_style": "dot"
+        }
+      ],
+      "notes": "The second column is why RL projects fail for reasons that look like infrastructure bugs.",
+      "background": null,
+      "theme_overrides": {},
+      "animations": [],
+      "references": [],
+      "metadata": {},
+      "locked": false,
+      "hidden": false
+    },
+    {
+      "id": "sl_1e5776804c",
+      "kind": "chart",
+      "layout": "auto",
+      "section_id": "sec_5bfa962651",
+      "eyebrow": null,
+      "title": "Sample efficiency, roughly",
+      "subtitle": null,
+      "elements": [
+        {
+          "id": "el_40037546f1",
+          "slot": "body",
+          "frame": null,
+          "style": {},
+          "hidden": false,
+          "z": 0,
+          "type": "chart",
+          "chart": {
+            "kind": "column",
+            "categories": [
+              "DQN",
+              "PPO",
+              "SAC",
+              "Model-based"
+            ],
+            "series": [
+              {
+                "name": "steps (M)",
+                "values": [
+                  10.0,
+                  6.2,
+                  3.8,
+                  0.9
+                ],
+                "color": null
+              }
+            ],
+            "x_label": null,
+            "y_label": "steps (millions)",
+            "legend": false,
+            "value_format": "{:,.0f}",
+            "stacked": false,
+            "palette": []
+          },
+          "title": "Environment steps to reach a target score (millions)",
+          "caption": null
+        },
+        {
+          "id": "el_286b3dbbd7",
+          "slot": "body",
+          "frame": null,
+          "style": {},
+          "hidden": false,
+          "z": 0,
+          "type": "text",
+          "text": "Model-based methods buy sample efficiency with compute and complexity.",
+          "role": "caption",
+          "align": "start",
+          "markdown": true
+        }
+      ],
+      "notes": "Numbers are illustrative, not a benchmark. Say so out loud.",
+      "background": null,
+      "theme_overrides": {},
+      "animations": [],
+      "references": [],
+      "metadata": {},
+      "locked": false,
+      "hidden": false
+    },
+    {
+      "id": "sl_07bc874b98",
+      "kind": "metrics",
+      "layout": "auto",
+      "section_id": "sec_5bfa962651",
+      "eyebrow": null,
+      "title": "What teams actually measure",
+      "subtitle": null,
+      "elements": [
+        {
+          "id": "el_e1fb90572b",
+          "slot": "body",
+          "frame": null,
+          "style": {},
+          "hidden": false,
+          "z": 0,
+          "type": "metric",
+          "value": "72%",
+          "label": "runs that reproduce",
+          "delta": "+18pts",
+          "trend": "up",
+          "icon": "refresh"
+        },
+        {
+          "id": "el_cc55cce618",
+          "slot": "body",
+          "frame": null,
+          "style": {},
+          "hidden": false,
+          "z": 0,
+          "type": "metric",
+          "value": "4.1×",
+          "label": "compute vs. supervised baseline",
+          "delta": null,
+          "trend": null,
+          "icon": "cpu"
+        },
+        {
+          "id": "el_e71ff4c872",
+          "slot": "body",
+          "frame": null,
+          "style": {},
+          "hidden": false,
+          "z": 0,
+          "type": "metric",
+          "value": "11",
+          "label": "median reward iterations",
+          "delta": "-3",
+          "trend": "down",
+          "icon": "target"
+        }
+      ],
+      "notes": "Reproducibility is the metric nobody puts in the paper and everybody argues about.",
+      "background": null,
+      "theme_overrides": {},
+      "animations": [],
+      "references": [],
+      "metadata": {},
+      "locked": false,
+      "hidden": false
+    },
+    {
+      "id": "sl_ee9eb6d130",
+      "kind": "timeline",
+      "layout": "auto",
+      "section_id": "sec_5bfa962651",
+      "eyebrow": null,
+      "title": "How a project usually goes",
+      "subtitle": null,
+      "elements": [
+        {
+          "id": "el_80ab119561",
+          "slot": "body",
+          "frame": null,
+          "style": {},
+          "hidden": false,
+          "z": 0,
+          "type": "timeline",
+          "entries": [
+            {
+              "label": "Week 1",
+              "title": "Environment",
+              "body": "Wrap the simulator; make it deterministic.",
+              "icon": null,
+              "status": "done"
+            },
+            {
+              "label": "Week 2–3",
+              "title": "Reward",
+              "body": "Write it, watch it get gamed, rewrite it.",
+              "icon": null,
+              "status": "done"
+            },
+            {
+              "label": "Week 4–6",
+              "title": "Baselines",
+              "body": "PPO first. Resist novelty.",
+              "icon": null,
+              "status": "active"
+            },
+            {
+              "label": "Week 7+",
+              "title": "Scale",
+              "body": "Only after a reproducible baseline.",
+              "icon": null,
+              "status": "planned"
+            }
+          ],
+          "orientation": "horizontal"
+        }
+      ],
+      "notes": "Most of the value is in weeks 1–3 and most of the excitement is in week 7. Plan accordingly.",
+      "background": null,
+      "theme_overrides": {},
+      "animations": [],
+      "references": [],
+      "metadata": {},
+      "locked": false,
+      "hidden": false
+    },
+    {
+      "id": "sl_0d153bc3da",
+      "kind": "content",
+      "layout": "auto",
+      "section_id": "sec_5bfa962651",
+      "eyebrow": null,
+      "title": "RLHF in one slide",
+      "subtitle": null,
+      "elements": [
+        {
+          "id": "el_ee7cc9d273",
+          "slot": "body",
+          "frame": null,
+          "style": {},
+          "hidden": false,
+          "z": 0,
+          "type": "cards",
+          "cards": [
+            {
+              "title": "Collect preferences",
+              "body": "Humans rank pairs of model outputs.",
+              "icon": "users",
+              "accent": null,
+              "badge": "1"
+            },
+            {
+              "title": "Fit a reward model",
+              "body": "Train a scorer to agree with those rankings.",
+              "icon": "brain",
+              "accent": null,
+              "badge": "2"
+            },
+            {
+              "title": "Optimise the policy",
+              "body": "PPO against the reward model, with a KL leash.",
+              "icon": "target",
+              "accent": null,
+              "badge": "3"
+            }
+          ],
+          "columns": 3
+        }
+      ],
+      "notes": "The KL penalty is the whole safety story in this diagram. Do not skip it.",
+      "background": null,
+      "theme_overrides": {},
+      "animations": [],
+      "references": [],
+      "metadata": {},
+      "locked": false,
+      "hidden": false
+    },
+    {
+      "id": "sl_f2217bc412",
+      "kind": "table",
+      "layout": "auto",
+      "section_id": "sec_5bfa962651",
+      "eyebrow": null,
+      "title": "Choosing an algorithm",
+      "subtitle": null,
+      "elements": [
+        {
+          "id": "el_50e2a1e59a",
+          "slot": "body",
+          "frame": null,
+          "style": {},
+          "hidden": false,
+          "z": 0,
+          "type": "table",
+          "columns": [
+            "Setting",
+            "Start with",
+            "Why"
+          ],
+          "rows": [
+            [
+              "Discrete actions, cheap sim",
+              "PPO",
+              "Stable, forgiving of bad hyperparameters"
+            ],
+            [
+              "Continuous control",
+              "SAC",
+              "Sample efficient off-policy learning"
+            ],
+            [
+              "Expensive real-world steps",
+              "Model-based",
+              "Learn the dynamics, then plan"
+            ],
+            [
+              "Language models",
+              "PPO / DPO",
+              "Reward model plus a KL constraint"
+            ]
+          ],
+          "header": true,
+          "striped": true,
+          "column_widths": []
+        }
+      ],
+      "notes": "",
+      "background": null,
+      "theme_overrides": {},
+      "animations": [],
+      "references": [],
+      "metadata": {},
+      "locked": false,
+      "hidden": false
+    },
+    {
+      "id": "sl_33861ab705",
+      "kind": "content",
+      "layout": "auto",
+      "section_id": "sec_c276944d3a",
+      "eyebrow": null,
+      "title": "One thing to try this week",
+      "subtitle": null,
+      "elements": [
+        {
+          "id": "el_fa2a9858ab",
+          "slot": "body",
+          "frame": null,
+          "style": {},
+          "hidden": false,
+          "z": 0,
+          "type": "code",
+          "language": "python",
+          "source": "import gymnasium as gym\n\nenv = gym.make('CartPole-v1')\nstate, _ = env.reset(seed=0)\nfor _ in range(500):\n    action = policy(state)\n    state, reward, done, truncated, _ = env.step(action)\n    if done or truncated:\n        state, _ = env.reset()",
+          "caption": null,
+          "highlight_lines": []
+        },
+        {
+          "id": "el_8f4c3e12d9",
+          "slot": "body",
+          "frame": null,
+          "style": {},
+          "hidden": false,
+          "z": 0,
+          "type": "text",
+          "text": "Instrument the reward before you tune anything else.",
+          "role": "lead",
+          "align": "start",
+          "markdown": true
+        }
+      ],
+      "notes": "Give them a concrete first commit. Momentum beats theory.",
+      "background": null,
+      "theme_overrides": {},
+      "animations": [],
+      "references": [],
+      "metadata": {},
+      "locked": false,
+      "hidden": false
+    },
+    {
+      "id": "sl_72eb6fe3de",
+      "kind": "image",
+      "layout": "auto",
+      "section_id": "sec_c276944d3a",
+      "eyebrow": null,
+      "title": "Further reading",
+      "subtitle": null,
+      "elements": [
+        {
+          "id": "el_286cbee953",
+          "slot": "body",
+          "frame": null,
+          "style": {},
+          "hidden": false,
+          "z": 0,
+          "type": "image",
+          "src": "",
+          "alt": "Placeholder for a diagram of the RLHF pipeline",
+          "caption": "Swap in your own diagram export",
+          "fit": "cover",
+          "radius": null
+        },
+        {
+          "id": "el_7e4fca5d28",
+          "slot": "body",
+          "frame": null,
+          "style": {},
+          "hidden": false,
+          "z": 0,
+          "type": "bullets",
+          "items": [
+            {
+              "text": "Sutton & Barto (2018)",
+              "level": 0,
+              "icon": null,
+              "emphasis": false
+            },
+            {
+              "text": "Spinning Up in Deep RL",
+              "level": 0,
+              "icon": null,
+              "emphasis": false
+            },
+            {
+              "text": "The PPO paper",
+              "level": 0,
+              "icon": null,
+              "emphasis": false
+            }
+          ],
+          "bullet_style": "dot"
+        }
+      ],
+      "notes": "",
+      "background": null,
+      "theme_overrides": {},
+      "animations": [],
+      "references": [],
+      "metadata": {},
+      "locked": false,
+      "hidden": false
+    },
+    {
+      "id": "sl_1d5a587ae2",
+      "kind": "ending",
+      "layout": "auto",
+      "section_id": "sec_c276944d3a",
+      "eyebrow": "Thanks",
+      "title": "Questions?",
+      "subtitle": "Start with the reward. Everything else is downstream.",
+      "elements": [],
+      "notes": "Leave the loop diagram on screen if there is time for questions.",
+      "background": null,
+      "theme_overrides": {},
+      "animations": [],
+      "references": [],
+      "metadata": {},
+      "locked": false,
+      "hidden": false
+    }
+  ],
+  "references": [
+    {
+      "id": "ref_ba859a2bed",
+      "title": "Reinforcement Learning: An Introduction",
+      "url": null,
+      "authors": [
+        "Sutton, R.",
+        "Barto, A."
+      ],
+      "year": 2018,
+      "publisher": "MIT Press",
+      "note": null,
+      "source_document": null
+    }
+  ],
+  "meta": {
+    "audience": "software engineers new to RL",
+    "tone": "clear, concrete, lightly technical",
+    "goal": "leave with a working mental model and one thing to try",
+    "duration_minutes": 20,
+    "language": "en",
+    "reading_level": null,
+    "keywords": [
+      "reinforcement learning",
+      "policy",
+      "reward",
+      "RLHF"
+    ],
+    "source_prompt": null,
+    "generator": "deckforge",
+    "extra": {}
+  },
+  "version": 1,
+  "created_at": "2026-07-25T06:53:58.595800Z",
+  "updated_at": "2026-07-25T06:53:58.595802Z"
+}

@@ -1,0 +1,128 @@
+{
+  "name": "minimal_dark",
+  "label": "Minimal Dark",
+  "description": "Ink-black canvas, restrained accent, maximum focus.",
+  "tags": [
+    "dark",
+    "clean",
+    "focus",
+    "neutral"
+  ],
+  "mode": "dark",
+  "version": "1.0.0",
+  "author": "DeckForge",
+  "palette": {
+    "background": "#0b0c0f",
+    "surface": "#14161b",
+    "surface_alt": "#1c1f26",
+    "text": "#f2f4f8",
+    "text_muted": "#9aa2b1",
+    "primary": "#7aa2ff",
+    "on_primary": "#0b0c0f",
+    "secondary": "#a78bfa",
+    "accent": "#2dd4bf",
+    "border": "#242832"
+  },
+  "shape": {
+    "shadow": "0 10px 40px rgba(0,0,0,0.45)"
+  },
+  "icon_style": "outline",
+  "background": {
+    "kind": "solid",
+    "color": "#0b0c0f"
+  },
+  "decor": {
+    "default": {
+      "kind": "none"
+    },
+    "cover": {
+      "kind": "underline",
+      "color": "primary",
+      "opacity": 1.0
+    }
+  },
+  "layout_preferences": {
+    "cover": [
+      "hero",
+      "hero_centered",
+      "image_background"
+    ],
+    "agenda": [
+      "agenda",
+      "two_column",
+      "cards"
+    ],
+    "section": [
+      "section_divider",
+      "section_number",
+      "big_statement"
+    ],
+    "content": [
+      "bullets",
+      "split",
+      "image_right",
+      "two_column",
+      "cards"
+    ],
+    "comparison": [
+      "comparison",
+      "two_column",
+      "table"
+    ],
+    "timeline": [
+      "timeline",
+      "process"
+    ],
+    "roadmap": [
+      "roadmap",
+      "timeline"
+    ],
+    "process": [
+      "process",
+      "flow",
+      "cycle"
+    ],
+    "metrics": [
+      "metrics",
+      "dashboard"
+    ],
+    "chart": [
+      "chart_focus",
+      "dashboard",
+      "split"
+    ],
+    "diagram": [
+      "diagram",
+      "architecture",
+      "flow"
+    ],
+    "table": [
+      "table"
+    ],
+    "image": [
+      "image_full",
+      "image_left",
+      "image_right"
+    ],
+    "quote": [
+      "quote",
+      "big_statement"
+    ],
+    "quiz": [
+      "quiz",
+      "cards"
+    ],
+    "references": [
+      "references",
+      "two_column"
+    ],
+    "appendix": [
+      "bullets",
+      "table"
+    ],
+    "ending": [
+      "ending",
+      "hero_centered"
+    ]
+  }
+}

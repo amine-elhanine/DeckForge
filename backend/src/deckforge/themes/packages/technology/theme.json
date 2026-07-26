@@ -1,0 +1,145 @@
+{
+  "name": "technology",
+  "label": "Technology",
+  "description": "Deep blue circuitry, cyan highlights, architecture-friendly.",
+  "tags": [
+    "tech",
+    "engineering",
+    "architecture",
+    "dark",
+    "enterprise"
+  ],
+  "mode": "dark",
+  "version": "1.0.0",
+  "author": "DeckForge",
+  "palette": {
+    "background": "#081120",
+    "surface": "#0f1c30",
+    "surface_alt": "#16263f",
+    "text": "#e6f1ff",
+    "text_muted": "#8fa6c4",
+    "primary": "#22d3ee",
+    "on_primary": "#081120",
+    "secondary": "#3b82f6",
+    "accent": "#a78bfa",
+    "border": "#1d3050"
+  },
+  "shape": {
+    "radius": 10,
+    "card_radius": 14,
+    "image_radius": 12,
+    "shadow": "0 12px 36px rgba(0,0,0,0.4)"
+  },
+  "icon_style": "outline",
+  "background": {
+    "kind": "gradient",
+    "colors": [
+      "#081120",
+      "#0c1a2e"
+    ],
+    "angle": 160
+  },
+  "backgrounds": {
+    "cover": {
+      "kind": "mesh",
+      "colors": [
+        "#081120",
+        "#0d2a44",
+        "#123a5c"
+      ],
+      "angle": 145
+    }
+  },
+  "decor": {
+    "default": {
+      "kind": "grid",
+      "color": "primary",
+      "opacity": 0.06,
+      "size": 48
+    }
+  },
+  "layout_preferences": {
+    "cover": [
+      "hero",
+      "hero_centered",
+      "image_background"
+    ],
+    "agenda": [
+      "agenda",
+      "two_column",
+      "cards"
+    ],
+    "section": [
+      "section_divider",
+      "section_number",
+      "big_statement"
+    ],
+    "content": [
+      "split",
+      "bullets",
+      "diagram",
+      "cards",
+      "two_column"
+    ],
+    "comparison": [
+      "comparison",
+      "two_column",
+      "table"
+    ],
+    "timeline": [
+      "timeline",
+      "process"
+    ],
+    "roadmap": [
+      "roadmap",
+      "timeline"
+    ],
+    "process": [
+      "process",
+      "flow",
+      "cycle"
+    ],
+    "metrics": [
+      "metrics",
+      "dashboard"
+    ],
+    "chart": [
+      "chart_focus",
+      "dashboard",
+      "split"
+    ],
+    "diagram": [
+      "diagram",
+      "architecture",
+      "flow"
+    ],
+    "table": [
+      "table"
+    ],
+    "image": [
+      "image_full",
+      "image_left",
+      "image_right"
+    ],
+    "quote": [
+      "quote",
+      "big_statement"
+    ],
+    "quiz": [
+      "quiz",
+      "cards"
+    ],
+    "references": [
+      "references",
+      "two_column"
+    ],
+    "appendix": [
+      "bullets",
+      "table"
+    ],
+    "ending": [
+      "ending",
+      "hero_centered"
+    ]
+  }
+}

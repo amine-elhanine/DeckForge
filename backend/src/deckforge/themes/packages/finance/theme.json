@@ -1,0 +1,141 @@
+{
+  "name": "finance",
+  "label": "Finance",
+  "description": "Forest green and ivory with data-first density.",
+  "tags": [
+    "finance",
+    "investor",
+    "data",
+    "formal",
+    "light"
+  ],
+  "mode": "light",
+  "version": "1.0.0",
+  "author": "DeckForge",
+  "palette": {
+    "background": "#fbfcfa",
+    "surface": "#eef2ec",
+    "surface_alt": "#e0e8dd",
+    "text": "#12201a",
+    "text_muted": "#54655c",
+    "primary": "#0f5132",
+    "secondary": "#1e6f5c",
+    "accent": "#c69749",
+    "border": "#d6e0d3",
+    "success": "#166534",
+    "danger": "#b91c1c"
+  },
+  "type_scale": {
+    "metric_value": {
+      "size": 58,
+      "weight": 700,
+      "color": "primary"
+    },
+    "table": {
+      "size": 15
+    }
+  },
+  "shape": {
+    "radius": 4,
+    "card_radius": 6,
+    "image_radius": 4,
+    "shadow": "0 3px 12px rgba(18,32,26,0.08)"
+  },
+  "icon_style": "outline",
+  "background": {
+    "kind": "solid",
+    "color": "#fbfcfa"
+  },
+  "decor": {
+    "default": {
+      "kind": "bar",
+      "color": "accent",
+      "opacity": 1.0,
+      "size": 5
+    }
+  },
+  "layout_preferences": {
+    "cover": [
+      "hero",
+      "hero_centered",
+      "image_background"
+    ],
+    "agenda": [
+      "agenda",
+      "two_column",
+      "cards"
+    ],
+    "section": [
+      "section_divider",
+      "section_number",
+      "big_statement"
+    ],
+    "content": [
+      "metrics",
+      "chart_focus",
+      "bullets",
+      "table",
+      "split"
+    ],
+    "comparison": [
+      "comparison",
+      "two_column",
+      "table"
+    ],
+    "timeline": [
+      "timeline",
+      "process"
+    ],
+    "roadmap": [
+      "roadmap",
+      "timeline"
+    ],
+    "process": [
+      "process",
+      "flow",
+      "cycle"
+    ],
+    "metrics": [
+      "metrics",
+      "dashboard"
+    ],
+    "chart": [
+      "chart_focus",
+      "dashboard",
+      "split"
+    ],
+    "diagram": [
+      "diagram",
+      "architecture",
+      "flow"
+    ],
+    "table": [
+      "table"
+    ],
+    "image": [
+      "image_full",
+      "image_left",
+      "image_right"
+    ],
+    "quote": [
+      "quote",
+      "big_statement"
+    ],
+    "quiz": [
+      "quiz",
+      "cards"
+    ],
+    "references": [
+      "references",
+      "two_column"
+    ],
+    "appendix": [
+      "bullets",
+      "table"
+    ],
+    "ending": [
+      "ending",
+      "hero_centered"
+    ]
+  }
+}

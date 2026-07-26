@@ -1,0 +1,161 @@
+{
+  "name": "apple",
+  "label": "Studio",
+  "description": "Enormous type, near-empty slides, one idea at a time.",
+  "tags": [
+    "keynote",
+    "minimal",
+    "product",
+    "launch",
+    "light"
+  ],
+  "mode": "light",
+  "version": "1.0.0",
+  "author": "DeckForge",
+  "palette": {
+    "background": "#ffffff",
+    "surface": "#f5f5f7",
+    "surface_alt": "#ebebef",
+    "text": "#1d1d1f",
+    "text_muted": "#6e6e73",
+    "primary": "#0071e3",
+    "secondary": "#5e5ce6",
+    "accent": "#ff375f",
+    "border": "#e5e5ea"
+  },
+  "fonts": {
+    "heading": "Inter Tight",
+    "body": "Inter"
+  },
+  "type_scale": {
+    "display": {
+      "size": 88,
+      "weight": 700,
+      "letter_spacing": -2.6,
+      "line_height": 1.0
+    },
+    "title": {
+      "size": 52,
+      "weight": 650,
+      "letter_spacing": -1.2
+    },
+    "subtitle": {
+      "size": 26,
+      "weight": 400
+    },
+    "bullet": {
+      "size": 22,
+      "line_height": 1.6
+    }
+  },
+  "spacing": {
+    "margin_x": 110,
+    "margin_y": 80,
+    "gap": 34,
+    "content_top": 210
+  },
+  "shape": {
+    "radius": 18,
+    "card_radius": 24,
+    "image_radius": 22,
+    "shadow": "0 12px 40px rgba(0,0,0,0.08)"
+  },
+  "bullets": {
+    "marker": "none",
+    "row_gap": 22
+  },
+  "icon_style": "outline",
+  "background": {
+    "kind": "solid",
+    "color": "#ffffff"
+  },
+  "decor": {
+    "default": {
+      "kind": "none"
+    }
+  },
+  "layout_preferences": {
+    "cover": [
+      "hero_centered",
+      "image_background",
+      "hero"
+    ],
+    "agenda": [
+      "agenda",
+      "two_column",
+      "cards"
+    ],
+    "section": [
+      "section_number",
+      "big_statement",
+      "section_divider"
+    ],
+    "content": [
+      "split",
+      "cards",
+      "bullets",
+      "image_left",
+      "grid"
+    ],
+    "comparison": [
+      "comparison",
+      "two_column",
+      "table"
+    ],
+    "timeline": [
+      "timeline",
+      "process"
+    ],
+    "roadmap": [
+      "roadmap",
+      "timeline"
+    ],
+    "process": [
+      "process",
+      "flow",
+      "cycle"
+    ],
+    "metrics": [
+      "metrics",
+      "dashboard"
+    ],
+    "chart": [
+      "chart_focus",
+      "dashboard",
+      "split"
+    ],
+    "diagram": [
+      "diagram",
+      "architecture",
+      "flow"
+    ],
+    "table": [
+      "table"
+    ],
+    "image": [
+      "image_full",
+      "image_left",
+      "image_right"
+    ],
+    "quote": [
+      "quote",
+      "big_statement"
+    ],
+    "quiz": [
+      "quiz",
+      "cards"
+    ],
+    "references": [
+      "references",
+      "two_column"
+    ],
+    "appendix": [
+      "bullets",
+      "table"
+    ],
+    "ending": [
+      "ending",
+      "hero_centered"
+    ]
+  }
+}

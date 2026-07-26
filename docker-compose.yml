@@ -1,0 +1,78 @@
+# DeckForge — local-first stack.
+#
+#   docker compose up --build              # backend + frontend (SQLite)
+#   docker compose --profile ollama up      # ... plus a local model server
+#   docker compose --profile postgres up    # ... with PostgreSQL instead of SQLite
+#
+# Nothing leaves your machine unless you configure a cloud provider key.
+
+services:
+  backend:
+    build:
+      context: ./backend
+    environment:
+      DECKFORGE_DATA_DIR: /app/data
+      DECKFORGE_DATABASE_URL: ${DECKFORGE_DATABASE_URL:-sqlite+aiosqlite:////app/data/deckforge.db}
+      DECKFORGE_CORS_ORIGINS: ${DECKFORGE_CORS_ORIGINS:-http://localhost:3000}
+      DECKFORGE_DEFAULT_PROVIDER: ${DECKFORGE_DEFAULT_PROVIDER:-ollama}
+      DECKFORGE_DEFAULT_MODEL: ${DECKFORGE_DEFAULT_MODEL:-qwen3:8b}
+      # host.docker.internal reaches an Ollama running on the host.
+      DECKFORGE_OLLAMA_BASE_URL: ${DECKFORGE_OLLAMA_BASE_URL:-http://host.docker.internal:11434}
+      DECKFORGE_PLUGIN_PATHS: /app/plugins
+      DECKFORGE_LOG_FORMAT: json
+    env_file:
+      - path: .env
+        required: false
+    volumes:
+      - deckforge-data:/app/data
+      - ./plugins:/app/plugins:ro
+    ports:
+      - "8000:8000"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        NEXT_PUBLIC_API_URL: ${NEXT_PUBLIC_API_URL:-http://localhost:8000}
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+  # --- optional: a local model server ---------------------------------------
+  ollama:
+    image: ollama/ollama:latest
+    profiles: ["ollama"]
+    volumes:
+      - ollama-models:/root/.ollama
+    ports:
+      - "11434:11434"
+    restart: unless-stopped
+
+  # --- optional: PostgreSQL instead of SQLite -------------------------------
+  postgres:
+    image: postgres:17-alpine
+    profiles: ["postgres"]
+    environment:
+      POSTGRES_USER: deckforge
+      POSTGRES_PASSWORD: deckforge
+      POSTGRES_DB: deckforge
+    volumes:
+      - deckforge-postgres:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U deckforge"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+volumes:
+  deckforge-data:
+  deckforge-postgres:
+  ollama-models:

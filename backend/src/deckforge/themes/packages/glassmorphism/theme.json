@@ -1,0 +1,150 @@
+{
+  "name": "glassmorphism",
+  "label": "Glassmorphism",
+  "description": "Frosted translucent panels floating over a colour mesh.",
+  "tags": [
+    "modern",
+    "glass",
+    "gradient",
+    "product",
+    "dark"
+  ],
+  "mode": "dark",
+  "version": "1.0.0",
+  "author": "DeckForge",
+  "palette": {
+    "background": "#0f1226",
+    "surface": "#ffffff14",
+    "surface_alt": "#ffffff0d",
+    "text": "#f4f6ff",
+    "text_muted": "#b9c0dd",
+    "primary": "#7dd3fc",
+    "on_primary": "#0f1226",
+    "secondary": "#c4b5fd",
+    "accent": "#f0abfc",
+    "border": "#ffffff2e"
+  },
+  "shape": {
+    "radius": 20,
+    "card_radius": 26,
+    "image_radius": 22,
+    "border_width": 1,
+    "shadow": "0 20px 60px rgba(0,0,0,0.35)",
+    "card_fill": "surface"
+  },
+  "icon_style": "outline",
+  "background": {
+    "kind": "mesh",
+    "colors": [
+      "#1b1a4a",
+      "#0f1226",
+      "#3b1d63",
+      "#0b3b52"
+    ],
+    "angle": 135
+  },
+  "backgrounds": {
+    "cover": {
+      "kind": "mesh",
+      "colors": [
+        "#3b1d63",
+        "#0f1226",
+        "#0b3b52",
+        "#1b1a4a"
+      ],
+      "angle": 155
+    }
+  },
+  "decor": {
+    "default": {
+      "kind": "orbs",
+      "color": "accent",
+      "opacity": 0.22,
+      "size": 440
+    }
+  },
+  "layout_preferences": {
+    "cover": [
+      "hero_centered",
+      "image_background",
+      "hero"
+    ],
+    "agenda": [
+      "agenda",
+      "two_column",
+      "cards"
+    ],
+    "section": [
+      "section_number",
+      "big_statement",
+      "section_divider"
+    ],
+    "content": [
+      "split",
+      "cards",
+      "bullets",
+      "image_left",
+      "grid"
+    ],
+    "comparison": [
+      "comparison",
+      "two_column",
+      "table"
+    ],
+    "timeline": [
+      "timeline",
+      "process"
+    ],
+    "roadmap": [
+      "roadmap",
+      "timeline"
+    ],
+    "process": [
+      "process",
+      "flow",
+      "cycle"
+    ],
+    "metrics": [
+      "metrics",
+      "dashboard"
+    ],
+    "chart": [
+      "chart_focus",
+      "dashboard",
+      "split"
+    ],
+    "diagram": [
+      "diagram",
+      "architecture",
+      "flow"
+    ],
+    "table": [
+      "table"
+    ],
+    "image": [
+      "image_full",
+      "image_left",
+      "image_right"
+    ],
+    "quote": [
+      "quote",
+      "big_statement"
+    ],
+    "quiz": [
+      "quiz",
+      "cards"
+    ],
+    "references": [
+      "references",
+      "two_column"
+    ],
+    "appendix": [
+      "bullets",
+      "table"
+    ],
+    "ending": [
+      "ending",
+      "hero_centered"
+    ]
+  }
+}

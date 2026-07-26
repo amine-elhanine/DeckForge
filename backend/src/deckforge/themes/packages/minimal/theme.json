@@ -1,0 +1,125 @@
+{
+  "name": "minimal",
+  "label": "Minimal",
+  "description": "Quiet, generous white space and a single confident accent.",
+  "tags": [
+    "clean",
+    "default",
+    "neutral",
+    "business",
+    "light"
+  ],
+  "mode": "light",
+  "version": "1.0.0",
+  "author": "DeckForge",
+  "palette": {
+    "background": "#ffffff",
+    "surface": "#f7f8fa",
+    "surface_alt": "#eef0f4",
+    "text": "#12141a",
+    "text_muted": "#606877",
+    "primary": "#2f6bff",
+    "secondary": "#5b53ff",
+    "accent": "#00b39f",
+    "border": "#e3e6ec"
+  },
+  "icon_style": "outline",
+  "background": {
+    "kind": "solid",
+    "color": "#ffffff"
+  },
+  "decor": {
+    "default": {
+      "kind": "none"
+    },
+    "cover": {
+      "kind": "underline",
+      "color": "primary",
+      "opacity": 1.0
+    }
+  },
+  "layout_preferences": {
+    "cover": [
+      "hero",
+      "hero_centered",
+      "image_background"
+    ],
+    "agenda": [
+      "agenda",
+      "two_column",
+      "cards"
+    ],
+    "section": [
+      "section_divider",
+      "section_number",
+      "big_statement"
+    ],
+    "content": [
+      "bullets",
+      "split",
+      "image_right",
+      "two_column",
+      "cards"
+    ],
+    "comparison": [
+      "comparison",
+      "two_column",
+      "table"
+    ],
+    "timeline": [
+      "timeline",
+      "process"
+    ],
+    "roadmap": [
+      "roadmap",
+      "timeline"
+    ],
+    "process": [
+      "process",
+      "flow",
+      "cycle"
+    ],
+    "metrics": [
+      "metrics",
+      "dashboard"
+    ],
+    "chart": [
+      "chart_focus",
+      "dashboard",
+      "split"
+    ],
+    "diagram": [
+      "diagram",
+      "architecture",
+      "flow"
+    ],
+    "table": [
+      "table"
+    ],
+    "image": [
+      "image_full",
+      "image_left",
+      "image_right"
+    ],
+    "quote": [
+      "quote",
+      "big_statement"
+    ],
+    "quiz": [
+      "quiz",
+      "cards"
+    ],
+    "references": [
+      "references",
+      "two_column"
+    ],
+    "appendix": [
+      "bullets",
+      "table"
+    ],
+    "ending": [
+      "ending",
+      "hero_centered"
+    ]
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "name": "google",
+  "label": "Material",
+  "description": "Material surfaces, four-colour accents, crisp elevation.",
+  "tags": [
+    "material",
+    "product",
+    "light",
+    "clean"
+  ],
+  "mode": "light",
+  "version": "1.0.0",
+  "author": "DeckForge",
+  "palette": {
+    "background": "#ffffff",
+    "surface": "#f1f3f4",
+    "surface_alt": "#e8eaed",
+    "text": "#202124",
+    "text_muted": "#5f6368",
+    "primary": "#1a73e8",
+    "secondary": "#34a853",
+    "accent": "#ea4335",
+    "border": "#dadce0",
+    "warning": "#fbbc04"
+  },
+  "fonts": {
+    "heading": "Google Sans",
+    "body": "Roboto",
+    "office_heading": "Arial",
+    "office_body": "Arial"
+  },
+  "shape": {
+    "radius": 8,
+    "card_radius": 12,
+    "image_radius": 12,
+    "shadow": "0 1px 3px rgba(60,64,67,0.3)"
+  },
+  "chart_palette": [
+    "#1a73e8",
+    "#ea4335",
+    "#fbbc04",
+    "#34a853",
+    "#a142f4",
+    "#24c1e0"
+  ],
+  "icon_style": "outline",
+  "background": {
+    "kind": "solid",
+    "color": "#ffffff"
+  },
+  "decor": {
+    "default": {
+      "kind": "none"
+    },
+    "cover": {
+      "kind": "bar",
+      "color": "primary",
+      "opacity": 1.0,
+      "size": 8
+    }
+  },
+  "layout_preferences": {
+    "cover": [
+      "hero",
+      "hero_centered",
+      "image_background"
+    ],
+    "agenda": [
+      "agenda",
+      "two_column",
+      "cards"
+    ],
+    "section": [
+      "section_divider",
+      "section_number",
+      "big_statement"
+    ],
+    "content": [
+      "bullets",
+      "split",
+      "image_right",
+      "two_column",
+      "cards"
+    ],
+    "comparison": [
+      "comparison",
+      "two_column",
+      "table"
+    ],
+    "timeline": [
+      "timeline",
+      "process"
+    ],
+    "roadmap": [
+      "roadmap",
+      "timeline"
+    ],
+    "process": [
+      "process",
+      "flow",
+      "cycle"
+    ],
+    "metrics": [
+      "metrics",
+      "dashboard"
+    ],
+    "chart": [
+      "chart_focus",
+      "dashboard",
+      "split"
+    ],
+    "diagram": [
+      "diagram",
+      "architecture",
+      "flow"
+    ],
+    "table": [
+      "table"
+    ],
+    "image": [
+      "image_full",
+      "image_left",
+      "image_right"
+    ],
+    "quote": [
+      "quote",
+      "big_statement"
+    ],
+    "quiz": [
+      "quiz",
+      "cards"
+    ],
+    "references": [
+      "references",
+      "two_column"
+    ],
+    "appendix": [
+      "bullets",
+      "table"
+    ],
+    "ending": [
+      "ending",
+      "hero_centered"
+    ]
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "name": "minimal_light",
+  "label": "Minimal Light",
+  "description": "Warm paper tones, hairline rules, delicate typography.",
+  "tags": [
+    "clean",
+    "warm",
+    "light",
+    "airy",
+    "editorial"
+  ],
+  "mode": "light",
+  "version": "1.0.0",
+  "author": "DeckForge",
+  "palette": {
+    "background": "#fdfcfa",
+    "surface": "#f5f2ec",
+    "surface_alt": "#ece7de",
+    "text": "#1d1a16",
+    "text_muted": "#6d6659",
+    "primary": "#b4763a",
+    "secondary": "#7a6a52",
+    "accent": "#3f7d6a",
+    "border": "#e4ded2"
+  },
+  "type_scale": {
+    "title": {
+      "weight": 500,
+      "letter_spacing": -0.4
+    },
+    "display": {
+      "weight": 500
+    }
+  },
+  "shape": {
+    "radius": 4,
+    "card_radius": 6,
+    "image_radius": 4,
+    "shadow": "none",
+    "card_fill": "surface"
+  },
+  "bullets": {
+    "marker": "dash",
+    "marker_color": "primary"
+  },
+  "icon_style": "outline",
+  "background": {
+    "kind": "solid",
+    "color": "#fdfcfa"
+  },
+  "decor": {
+    "default": {
+      "kind": "none"
+    }
+  },
+  "layout_preferences": {
+    "cover": [
+      "hero",
+      "image_background"
+    ],
+    "agenda": [
+      "agenda",
+      "two_column",
+      "cards"
+    ],
+    "section": [
+      "section_divider",
+      "section_number",
+      "big_statement"
+    ],
+    "content": [
+      "two_column",
+      "bullets",
+      "image_right",
+      "split"
+    ],
+    "comparison": [
+      "comparison",
+      "two_column",
+      "table"
+    ],
+    "timeline": [
+      "timeline",
+      "process"
+    ],
+    "roadmap": [
+      "roadmap",
+      "timeline"
+    ],
+    "process": [
+      "process",
+      "flow",
+      "cycle"
+    ],
+    "metrics": [
+      "metrics",
+      "dashboard"
+    ],
+    "chart": [
+      "chart_focus",
+      "dashboard",
+      "split"
+    ],
+    "diagram": [
+      "diagram",
+      "architecture",
+      "flow"
+    ],
+    "table": [
+      "table"
+    ],
+    "image": [
+      "image_full",
+      "image_left",
+      "image_right"
+    ],
+    "quote": [
+      "quote"
+    ],
+    "quiz": [
+      "quiz",
+      "cards"
+    ],
+    "references": [
+      "references",
+      "two_column"
+    ],
+    "appendix": [
+      "bullets",
+      "table"
+    ],
+    "ending": [
+      "ending",
+      "hero_centered"
+    ]
+  }
+}

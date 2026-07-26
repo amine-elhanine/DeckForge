@@ -1,0 +1,142 @@
+{
+  "name": "education",
+  "label": "Education",
+  "description": "Friendly teal and amber, roomy type, easy to read from the back row.",
+  "tags": [
+    "teaching",
+    "friendly",
+    "workshop",
+    "light",
+    "accessible"
+  ],
+  "mode": "light",
+  "version": "1.0.0",
+  "author": "DeckForge",
+  "palette": {
+    "background": "#fdfefe",
+    "surface": "#eef8f7",
+    "surface_alt": "#e0f1ef",
+    "text": "#12211f",
+    "text_muted": "#4f6764",
+    "primary": "#0d8b7d",
+    "secondary": "#2563eb",
+    "accent": "#f59e0b",
+    "border": "#cfe6e3"
+  },
+  "type_scale": {
+    "body": {
+      "size": 21
+    },
+    "bullet": {
+      "size": 21,
+      "line_height": 1.55
+    }
+  },
+  "shape": {
+    "radius": 14,
+    "card_radius": 18,
+    "image_radius": 16
+  },
+  "bullets": {
+    "marker": "check",
+    "marker_color": "primary",
+    "row_gap": 18
+  },
+  "icon_style": "outline",
+  "background": {
+    "kind": "solid",
+    "color": "#fdfefe"
+  },
+  "decor": {
+    "default": {
+      "kind": "dots",
+      "color": "accent",
+      "opacity": 0.18,
+      "size": 180
+    }
+  },
+  "layout_preferences": {
+    "cover": [
+      "hero",
+      "hero_centered",
+      "image_background"
+    ],
+    "agenda": [
+      "agenda",
+      "two_column",
+      "cards"
+    ],
+    "section": [
+      "section_divider",
+      "section_number",
+      "big_statement"
+    ],
+    "content": [
+      "bullets",
+      "split",
+      "image_right",
+      "two_column",
+      "cards"
+    ],
+    "comparison": [
+      "comparison",
+      "two_column",
+      "table"
+    ],
+    "timeline": [
+      "timeline",
+      "process"
+    ],
+    "roadmap": [
+      "roadmap",
+      "timeline"
+    ],
+    "process": [
+      "process",
+      "flow",
+      "cycle"
+    ],
+    "metrics": [
+      "metrics",
+      "dashboard"
+    ],
+    "chart": [
+      "chart_focus",
+      "dashboard",
+      "split"
+    ],
+    "diagram": [
+      "diagram",
+      "architecture",
+      "flow"
+    ],
+    "table": [
+      "table"
+    ],
+    "image": [
+      "image_full",
+      "image_left",
+      "image_right"
+    ],
+    "quote": [
+      "quote",
+      "big_statement"
+    ],
+    "quiz": [
+      "quiz",
+      "cards"
+    ],
+    "references": [
+      "references",
+      "two_column"
+    ],
+    "appendix": [
+      "bullets",
+      "table"
+    ],
+    "ending": [
+      "ending",
+      "hero_centered"
+    ]
+  }
+}

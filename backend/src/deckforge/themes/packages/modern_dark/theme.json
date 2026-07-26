@@ -1,0 +1,163 @@
+{
+  "name": "modern_dark",
+  "label": "Modern Dark",
+  "description": "Deep midnight surfaces with luminous gradients and soft glow.",
+  "tags": [
+    "dark",
+    "modern",
+    "product",
+    "tech",
+    "startup"
+  ],
+  "mode": "dark",
+  "version": "1.0.0",
+  "author": "DeckForge",
+  "palette": {
+    "background": "#0d1117",
+    "surface": "#161b24",
+    "surface_alt": "#1f2632",
+    "text": "#e9edf5",
+    "text_muted": "#94a0b4",
+    "primary": "#4c8dff",
+    "on_primary": "#04070d",
+    "secondary": "#b06bff",
+    "accent": "#22d3ee",
+    "border": "#252d3a"
+  },
+  "shape": {
+    "card_radius": 20,
+    "shadow": "0 18px 50px rgba(0,0,0,0.5)"
+  },
+  "icon_style": "outline",
+  "background": {
+    "kind": "gradient",
+    "colors": [
+      "#0d1117",
+      "#131a26"
+    ],
+    "angle": 160
+  },
+  "backgrounds": {
+    "cover": {
+      "kind": "mesh",
+      "colors": [
+        "#0d1117",
+        "#182338",
+        "#1d2a4d"
+      ],
+      "angle": 140
+    },
+    "section": {
+      "kind": "gradient",
+      "colors": [
+        "#111826",
+        "#0d1117"
+      ],
+      "angle": 120
+    },
+    "ending": {
+      "kind": "mesh",
+      "colors": [
+        "#0d1117",
+        "#182338",
+        "#1d2a4d"
+      ],
+      "angle": 140
+    }
+  },
+  "decor": {
+    "default": {
+      "kind": "none"
+    },
+    "cover": {
+      "kind": "orbs",
+      "color": "primary",
+      "opacity": 0.22,
+      "size": 420
+    }
+  },
+  "layout_preferences": {
+    "cover": [
+      "hero_centered",
+      "image_background",
+      "hero"
+    ],
+    "agenda": [
+      "agenda",
+      "two_column",
+      "cards"
+    ],
+    "section": [
+      "section_number",
+      "big_statement",
+      "section_divider"
+    ],
+    "content": [
+      "split",
+      "cards",
+      "bullets",
+      "image_left",
+      "grid"
+    ],
+    "comparison": [
+      "comparison",
+      "two_column",
+      "table"
+    ],
+    "timeline": [
+      "timeline",
+      "process"
+    ],
+    "roadmap": [
+      "roadmap",
+      "timeline"
+    ],
+    "process": [
+      "process",
+      "flow",
+      "cycle"
+    ],
+    "metrics": [
+      "metrics",
+      "dashboard"
+    ],
+    "chart": [
+      "chart_focus",
+      "dashboard",
+      "split"
+    ],
+    "diagram": [
+      "diagram",
+      "architecture",
+      "flow"
+    ],
+    "table": [
+      "table"
+    ],
+    "image": [
+      "image_full",
+      "image_left",
+      "image_right"
+    ],
+    "quote": [
+      "quote",
+      "big_statement"
+    ],
+    "quiz": [
+      "quiz",
+      "cards"
+    ],
+    "references": [
+      "references",
+      "two_column"
+    ],
+    "appendix": [
+      "bullets",
+      "table"
+    ],
+    "ending": [
+      "ending",
+      "hero_centered"
+    ]
+  }
+}

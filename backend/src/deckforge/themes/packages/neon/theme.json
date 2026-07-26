@@ -1,0 +1,153 @@
+{
+  "name": "neon",
+  "label": "Neon",
+  "description": "Blacked-out canvas with electric cyan and magenta.",
+  "tags": [
+    "dark",
+    "bold",
+    "tech",
+    "gaming",
+    "cyber"
+  ],
+  "mode": "dark",
+  "version": "1.0.0",
+  "author": "DeckForge",
+  "palette": {
+    "background": "#05060a",
+    "surface": "#0d1017",
+    "surface_alt": "#141924",
+    "text": "#eafcff",
+    "text_muted": "#7f93a8",
+    "primary": "#00e5ff",
+    "on_primary": "#05060a",
+    "secondary": "#ff2fb9",
+    "accent": "#c6ff00",
+    "border": "#1b2433"
+  },
+  "type_scale": {
+    "display": {
+      "weight": 800,
+      "letter_spacing": -1.0
+    },
+    "eyebrow": {
+      "letter_spacing": 3.0
+    }
+  },
+  "shape": {
+    "radius": 2,
+    "card_radius": 4,
+    "image_radius": 2,
+    "shadow": "0 0 28px rgba(0,229,255,0.28)"
+  },
+  "bullets": {
+    "marker": "chevron",
+    "marker_color": "primary"
+  },
+  "icon_style": "outline",
+  "background": {
+    "kind": "solid",
+    "color": "#05060a"
+  },
+  "backgrounds": {
+    "cover": {
+      "kind": "gradient",
+      "colors": [
+        "#05060a",
+        "#0a1b2a"
+      ],
+      "angle": 160
+    }
+  },
+  "decor": {
+    "default": {
+      "kind": "grid",
+      "color": "primary",
+      "opacity": 0.07,
+      "size": 40
+    }
+  },
+  "layout_preferences": {
+    "cover": [
+      "hero_centered",
+      "image_background",
+      "hero"
+    ],
+    "agenda": [
+      "agenda",
+      "two_column",
+      "cards"
+    ],
+    "section": [
+      "section_number",
+      "big_statement",
+      "section_divider"
+    ],
+    "content": [
+      "split",
+      "cards",
+      "bullets",
+      "image_left",
+      "grid"
+    ],
+    "comparison": [
+      "comparison",
+      "two_column",
+      "table"
+    ],
+    "timeline": [
+      "timeline",
+      "process"
+    ],
+    "roadmap": [
+      "roadmap",
+      "timeline"
+    ],
+    "process": [
+      "process",
+      "flow",
+      "cycle"
+    ],
+    "metrics": [
+      "metrics",
+      "dashboard"
+    ],
+    "chart": [
+      "chart_focus",
+      "dashboard",
+      "split"
+    ],
+    "diagram": [
+      "diagram",
+      "architecture",
+      "flow"
+    ],
+    "table": [
+      "table"
+    ],
+    "image": [
+      "image_full",
+      "image_left",
+      "image_right"
+    ],
+    "quote": [
+      "quote",
+      "big_statement"
+    ],
+    "quiz": [
+      "quiz",
+      "cards"
+    ],
+    "references": [
+      "references",
+      "two_column"
+    ],
+    "appendix": [
+      "bullets",
+      "table"
+    ],
+    "ending": [
+      "ending",
+      "hero_centered"
+    ]
+  }
+}
